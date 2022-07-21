@@ -1,34 +1,92 @@
-# Patika.dev-Merge-Sort-Projesi
-Merge Sort Projesi
+# Binary-Search-Tree-Projesi
+ Binary Search Tree Projesi
 
-# Merge Sort Projesi
+# Binary Search Tree Projesi
 
-[16,21,11,8,12,22] -> Merge Sort
+[7, 5, 1, 8, 3, 6, 0, 9, 4, 2] dizisinin Binary-Search-Tree aşamalarını yazınız.
 
-1-Yukarıdaki dizinin sort türüne göre aşamalarını yazınız.
+Örnek: root x'dir. root'un sağından y bulunur. Solunda z bulunur vb.
 
-2-Big-O gösterimini yazınız.
+# Binary Search Tree Aşamaları
 
-# Merge Sort Aşamaları
+Dizinin en başındaki sayı root olarak seçilir. Root'dan büyük sayılar sağına, root'dan küçük sayılar doluna yazılır.
 
-1- [16,21,11,8,12,22] dizisi ikiye bölünür.
+Root:7
 
-2- [16,21,11]  -  [8,12,22]
+              7
+             /
+            5
+            
+            
+              7
+             /
+            5
+           /
+          1
+         
+        
+             7
+            / \
+           5   8
+          /
+         1   
+         
+         
+             7
+            / \
+           5   8
+          /
+         1
+          \
+           3
+           
+           
+              7
+             / \
+            5   8
+           / \
+          1   6
+           \
+            3
+            
+            
+              7
+             / \
+            5   8
+           / \
+          1   6
+         / \
+        0   3
+        
+        
+              7
+             / \
+            5   8
+           / \   \
+          1   6   9
+         / \
+        0   3
+        
+        
+               7
+              / \
+             5   8
+            / \   \
+           1   6   9
+          / \
+         0   3
+              \
+               4
 
-3- [16,21]  -  [11]  ve  [8,12]  -  [22]
 
-4- [16] [21]  -  [11]  ve  [8] [12]  -  [22] birer parçaya ayırdığımız veriler küçükten büyüğe kendi grupları arasında birleştirilir.
-
-5- [11,16,21]  ve  [8,12,22] en son iki grup da bir araya getirilir.
-
-6- [8,11,12,16,21,22]
-
-# Big O Notation Gösterimi
-
-Worst Case: O(nlogn)
-
-Average Case: O(nlogn)
-
-Best Case: O(nlogn)
+               7
+              / \
+             5   8
+            / \   \
+           1   6   9
+          / \
+         0   3
+            / \
+           2   4
 
 [Patika.Dev](www.patika.dev)
